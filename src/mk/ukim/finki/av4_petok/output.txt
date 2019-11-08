@@ -1,0 +1,12 @@
+Doe John 100 100 100 100 A
+Pantz Smartee 80 90 80 83 B
+Stefan Andonov 70 80 90 82 B
+Trajce Trajkov 50 50 50 50 E
+Trajce Trajkovski 76 50 40 52 E
+Trajanka Trajkovski 76 50 46 54 E
+A: 1
+B: 2
+C: 0
+D: 0
+E: 3
+F: 0

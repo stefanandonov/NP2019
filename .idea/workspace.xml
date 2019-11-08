@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3228678d-f9c1-451e-a3dc-ef417028652a" name="Default Changelist" comment="" />
+    <list default="true" id="3228678d-f9c1-451e-a3dc-ef417028652a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/ArrayListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/OldestPersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/WordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/grades.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/persons.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/test1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/test2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av5_petok/BoxTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av5_petok/NumericProcessorTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av5_petok/PriorityQueueTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/CirclesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DailyTemperatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DoubleMatrixTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/IntegerArrayTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/BankTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/BankTester.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="NP_2019_petok" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -14,6 +37,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ShWV3d2WVr7Lc5oSelpM2tfXMH" />
   <component name="PropertiesComponent">
@@ -37,13 +63,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BankTester">
-    <configuration name="BankTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="konsultacii.BankTester" />
+  <component name="RunManager" selected="Application.NumericProcessorTester">
+    <configuration name="BoxTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av5_petok.BoxTester" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="konsultacii.*" />
+          <option name="PATTERN" value="mk.ukim.finki.av5_petok.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -51,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av3.CalculatorTest" />
+    <configuration name="NumericProcessorTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av5_petok.NumericProcessorTester" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.av3.*" />
+          <option name="PATTERN" value="mk.ukim.finki.av5_petok.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av3_petok.CalculatorTester" />
+    <configuration name="OldestPersonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av4_petok.OldestPersonTest" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.av3_petok.*" />
+          <option name="PATTERN" value="mk.ukim.finki.av4_petok.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av3.ExceptionTest" />
+    <configuration name="PriorityQueueTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av5_petok.PriorityQueueTester" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.av3.*" />
+          <option name="PATTERN" value="mk.ukim.finki.av5_petok.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionalTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av3_petok.FunctionalTester" />
+    <configuration name="StudentsTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av4_petok.StudentsTester" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.av3_petok.*" />
+          <option name="PATTERN" value="mk.ukim.finki.av4_petok.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BankTester" />
-        <item itemvalue="Application.CalculatorTester" />
-        <item itemvalue="Application.FunctionalTester" />
-        <item itemvalue="Application.CalculatorTest" />
-        <item itemvalue="Application.ExceptionTest" />
+        <item itemvalue="Application.NumericProcessorTester" />
+        <item itemvalue="Application.PriorityQueueTester" />
+        <item itemvalue="Application.BoxTester" />
+        <item itemvalue="Application.StudentsTester" />
+        <item itemvalue="Application.OldestPersonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -124,135 +150,125 @@
       <option name="presentableId" value="Default" />
       <updated>1572016327332</updated>
       <workItem from="1572016330213" duration="6621000" />
-      <workItem from="1572371681601" duration="20279000" />
+      <workItem from="1572371681601" duration="21733000" />
+      <workItem from="1573057320592" duration="7686000" />
+      <workItem from="1573218153432" duration="8327000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>340</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>332</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>333</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>334</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>335</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>336</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>337</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>338</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>339</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>341</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>345</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>346</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>353</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>354</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>358</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java</url>
+          <line>251</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>359</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java</url>
+          <line>423</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>361</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java</url>
+          <line>424</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>231</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java</url>
+          <line>425</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>232</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>234</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>233</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>235</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>236</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/konsultacii/BankTester.java</url>
-          <line>237</line>
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java</url>
+          <line>427</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

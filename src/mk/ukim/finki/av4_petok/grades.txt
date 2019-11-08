@@ -1,0 +1,6 @@
+Doe:John:100:100:100
+Pantz:Smartee:80:90:80
+Stefan:Andonov:70:80:90
+Trajce:Trajkov:50:50:50
+Trajce:Trajkovski:76:50:40
+Trajanka:Trajkovski:76:50:46
