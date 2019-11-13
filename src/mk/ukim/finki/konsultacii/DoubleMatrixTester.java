@@ -1,169 +1,140 @@
-package mk.ukim.finki.konsultacii;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.text.DecimalFormat;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.Random;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Objects;
-import java.util.Scanner;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+
+import static java.util.Arrays.*;
 
 class InsufficientElementsException extends Exception{
-
-    public InsufficientElementsException() {}
-
-    public String getMessage(){
-        return "Insufficient number of elements";
+    public InsufficientElementsException(String message) {
+        super(message);
     }
 }
-
 class InvalidRowNumberException extends Exception{
-
-    public InvalidRowNumberException() {}
-
-    public String getMessage(){
-        return "Invalid row number";
+    public InvalidRowNumberException(String message) {
+        super(message);
     }
 }
-
 class InvalidColumnNumberException extends Exception{
-
-    public InvalidColumnNumberException() {}
-
-    public String getMessage(){
-        return "Invalid column number";
+    public InvalidColumnNumberException(String message) {
+        super(message);
     }
 }
 
-class DoubleMatrix{
+final class DoubleMatrix{
+    private double [] [] matrix;
 
-    private double [][] matrix;
-    private int rows;
-    private int columns;
-
-    public DoubleMatrix(double[] a, int m, int n) throws InsufficientElementsException {
-
-        if(a.length < m*n){
-            throw new InsufficientElementsException();
+    public DoubleMatrix(double[] array,int m,int n) throws InsufficientElementsException {
+        if (array.length>m*n){
+            throw new InsufficientElementsException("Invalid column number");
         }
-
-        matrix=new double[m][n];
-        int k=a.length - (m*n);
-        for(int i=k;i<a.length;i++) {
-
-            matrix[(i-k)/n][(i-k)%n]=a[i];
-        }
-        rows = m;
-        columns = n;
-    }
-
-    public String getDimensions(){
-        return "[" + rows + " x " + columns + "]";
-    }
-
-    public int rows() {
-        return rows;
-    }
-
-    public int columns() {
-        return columns;
-    }
-
-    public double maxElementAtRow(int row) throws InvalidRowNumberException {
-        if(row < 1 || row > rows){
-            throw new InvalidRowNumberException();
-        }
-        return IntStream.range(0,columns).
-                mapToDouble(i -> matrix[row-1][i])
-                .max()
-                .getAsDouble();
-    }
-
-    public double maxElementAtColumn(int column) throws InvalidColumnNumberException {
-        if(column < 1 || column > columns){
-            throw new InvalidColumnNumberException();
-        }
-        return IntStream.range(0,rows)
-                .mapToDouble(i -> matrix[i][column-1])
-                .max().getAsDouble();
-    }
-
-    public double sum(){
-        return Arrays.stream(matrix)
-                .flatMapToDouble(array -> Arrays.stream(array))
-                .sum();
-    }
-
-    public double[] toSortedArray(){
-
-        double [] array = Stream.of(matrix)
-                .flatMapToDouble(DoubleStream::of)
-                .toArray();
-
-        array=Arrays.stream(array)
-                .boxed()
-                .sorted(Collections.reverseOrder())
-                .mapToDouble(Double::doubleValue)
-                .toArray();
-
-        return array;
-    }
-
-    public String toString(){
-
-        StringBuilder sb=new StringBuilder();
-        for(int i=0;i<rows;i++){
-            for(int j=0;j<columns;j++){
-                if(j==columns-1){
-                    sb.append(String.format("%.2f",matrix[i][j]));
-                }else{
-                    sb.append(String.format("%.2f\t",matrix[i][j]));
+        else if(array.length<m*n){
+            for (int i=0,j=0;i<array.length;i++,j++){
+                int temp=m*n;
+                while (temp>array.length){
+                    j++;
+                    temp--;
                 }
-
-            }if(i!=rows-1){
-                sb.append("\n");
+                matrix[i%m][i/n]=array[i];
             }
+        }
+        else{
+            for (int i=0;i<array.length;i++){
+                matrix[i%m][i/n]=array[i];
+
+            }
+        }
+    }
+    public String getDimensions(){
+        StringBuilder sb=new StringBuilder();
+        sb.append("[").append(matrix.length).append(" x ")
+                .append(matrix[0].length).append("]");
+        return sb.toString();
+    }
+    public int rows(){
+        return matrix.length;
+    }
+    public int columns(){
+        return matrix[0].length;
+    }
+    public double maxElementAtRow(int row) throws InvalidRowNumberException {
+        if (row<=0 || row>rows()){
+            throw new InvalidRowNumberException("row ima vrednost od [1, "+rows()+"]");
+        }
+        else{
+            double max=0;
+            for (int i=0;i<columns();i++){
+                if (matrix[i][row]>max)
+                    max=matrix[i][row];
+            }
+            return max;
+        }
+    }
+    public double maxElementAtColumn(int column) throws InvalidColumnNumberException {
+        if (column<=0 || column>columns()){
+            throw new InvalidColumnNumberException("column ima vrednost od [1, "+columns()+"]");
+        }
+        else{
+            double max=0;
+            for (int j=0;j<rows();j++){
+                if (matrix[column][j]>max)
+                    max=matrix[column][j];
+
+            }
+            return max;
+        }
+    }
+    public double sum(){
+        int sum=0;
+        for (int i=0;i<matrix.length;i++){
+            for (int j=0;i<matrix[0].length;i++){
+                sum+=matrix[i][j];
+            }
+        }
+        return sum;
+    }
+    public double[] toSortedArray(){
+        double[] temp=new double[matrix.length*matrix[0].length];
+        int k=0;
+        for (int i=0;i<matrix.length;i++){
+            for (int j=0;j<matrix[0].length;i++){
+                temp[k]=matrix[i][j];
+                k++;
+            }
+        }
+        Arrays.sort(temp);
+        return temp;
+    }
+    public String  toString(){
+        StringBuilder sb=new StringBuilder();
+        for (int i=0;i<matrix.length;i++){
+            for (int j=0;j<matrix[0].length;j++){
+                sb.append(String.format("%d.2\t"));
+            }
+            sb.append("\n");
         }
         return sb.toString();
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        DoubleMatrix that = (DoubleMatrix) o;
-        return rows == that.rows&&columns == that.columns&&Arrays.deepEquals(matrix, that.matrix);
-    }
 
-    @Override
-    public int hashCode() {
-        int result = Objects.hash(rows, columns);
-        result = 31 * result + Arrays.deepHashCode(matrix);
-        return result;
-    }
 }
-
 class MatrixReader{
-
     public static DoubleMatrix read(InputStream input) throws InsufficientElementsException {
+        Scanner sc=new Scanner(input);
 
-        Scanner in=new Scanner(input);
-        int rows=in.nextInt();
-        int columns=in.nextInt();
-
-        double [] matrix = new double[rows*columns];
-
-        for(int i=0;i<rows*columns;i++){
-            matrix[i]=in.nextDouble();
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        double [] array=new double[n*m];
+        for (int i=0;i<n*m;i++){
+            array[i]=sc.nextDouble();
         }
-        in.close();
-        return new DoubleMatrix(matrix,rows,columns);
+        return new DoubleMatrix(array,n,m);
     }
 }
-
 
 public class DoubleMatrixTester {
 
@@ -352,4 +323,3 @@ public class DoubleMatrixTester {
         scanner.close();
     }
 }
-

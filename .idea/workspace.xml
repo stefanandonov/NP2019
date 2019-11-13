@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3228678d-f9c1-451e-a3dc-ef417028652a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/ArrayListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/OldestPersonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/WordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/grades.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/persons.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/test1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av4_petok/test2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av5_petok/BoxTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av5_petok/NumericProcessorTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av5_petok/PriorityQueueTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/CirclesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DailyTemperatureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DoubleMatrixTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/IntegerArrayTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/WeatherStationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ApplicantEvaluationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/F1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/TaskSchedulerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/BankTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/BankTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DoubleMatrixTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DoubleMatrixTester.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,13 +50,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NumericProcessorTester">
+  <component name="RunManager" selected="Application.F1Test">
+    <configuration name="BankTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.konsultacii.BankTester" />
+      <module name="NP_2019_petok" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.konsultacii.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoxTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av5_petok.BoxTester" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="mk.ukim.finki.av5_petok.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="F1Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.konsultacii.F1Test" />
+      <module name="NP_2019_petok" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mk.ukim.finki.konsultacii.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,19 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OldestPersonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av4_petok.OldestPersonTest" />
-      <module name="NP_2019_petok" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.av4_petok.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PriorityQueueTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av5_petok.PriorityQueueTester" />
       <module name="NP_2019_petok" />
@@ -116,26 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentsTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av4_petok.StudentsTester" />
-      <module name="NP_2019_petok" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.av4_petok.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.F1Test" />
+        <item itemvalue="Application.BankTester" />
         <item itemvalue="Application.NumericProcessorTester" />
         <item itemvalue="Application.PriorityQueueTester" />
         <item itemvalue="Application.BoxTester" />
-        <item itemvalue="Application.StudentsTester" />
-        <item itemvalue="Application.OldestPersonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -152,8 +139,17 @@
       <workItem from="1572016330213" duration="6621000" />
       <workItem from="1572371681601" duration="21733000" />
       <workItem from="1573057320592" duration="7686000" />
-      <workItem from="1573218153432" duration="8327000" />
+      <workItem from="1573218153432" duration="12815000" />
+      <workItem from="1573661898978" duration="2182000" />
     </task>
+    <task id="LOCAL-00001" summary="av5 done">
+      <created>1573227791773</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573227791773</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +167,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="av5 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="av5 done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
