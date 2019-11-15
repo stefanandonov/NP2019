@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3228678d-f9c1-451e-a3dc-ef417028652a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ApplicantEvaluationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/F1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/TaskSchedulerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av6_petok/ApplicantEvaluationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av6_petok/DailyTemperatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av6_petok/ShapesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av6_petok/TripleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/BankTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/BankTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DoubleMatrixTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DoubleMatrixTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ApplicantEvaluationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/DailyTemperatureTest.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Elevate_Globaol/call-feature-calculator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Elevate_Globaol/gcid" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -140,7 +141,7 @@
       <workItem from="1572371681601" duration="21733000" />
       <workItem from="1573057320592" duration="7686000" />
       <workItem from="1573218153432" duration="12815000" />
-      <workItem from="1573661898978" duration="2182000" />
+      <workItem from="1573661898978" duration="10379000" />
     </task>
     <task id="LOCAL-00001" summary="av5 done">
       <created>1573227791773</created>
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573227791773</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="office hours tasks added">
+      <created>1573664352102</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573664352102</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +178,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="av5 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="av5 done" />
+    <MESSAGE value="office hours tasks added" />
+    <option name="LAST_COMMIT_MESSAGE" value="office hours tasks added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

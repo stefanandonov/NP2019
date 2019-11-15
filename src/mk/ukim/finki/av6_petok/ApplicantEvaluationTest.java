@@ -1,15 +1,13 @@
-package mk.ukim.finki.konsultacii;
-
+package mk.ukim.finki.av6_petok;
 import java.util.Scanner;
 
 /**
  * I partial exam 2016
  */
 
-class InvalidEvaluation extends Exception {
+class InvalidEvaluation extends Exception{
 
 }
-
 public class ApplicantEvaluationTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -90,42 +88,48 @@ interface Evaluator {
 
 class EvaluatorBuilder {
     public static Evaluator build(Evaluator.TYPE type) throws InvalidEvaluation {
-
-        //basic evaluators
         Evaluator noCriminalRecordEvaluator = applicant -> !applicant.hasCriminalRecord();
-        Evaluator moreExperienceEvaluator = applicant -> applicant.getEmploymentYears() > 10;
-        Evaluator moreCreditScoreEvaluator = applicant -> applicant.getCreditScore() >= 500;
+        Evaluator moreExperienceEvaluator = applicant -> applicant.getEmploymentYears()>10;
+        Evaluator moreCreditScoreEvaluator = applicant -> applicant.getCreditScore()>=500;
+        Evaluator NO_CRIMINAL_RECORD_AND_MORE_EXPERIENCE_EVALUATOR = new DoubleEvaluator(noCriminalRecordEvaluator, moreExperienceEvaluator);
+        Evaluator MORE_EXPERIENCE_AND_MORE_CREDIT_SCORE_EVALUATOR= new DoubleEvaluator(moreExperienceEvaluator, moreCreditScoreEvaluator);
+        Evaluator NO_CRIMINAL_RECORD_AND_MORE_CREDIT_SCORE_EVALUATOR = new DoubleEvaluator(noCriminalRecordEvaluator, moreCreditScoreEvaluator);
 
         switch (type) {
+            case MORE_CREDIT_SCORE:
+                return moreCreditScoreEvaluator;
             case NO_CRIMINAL_RECORD:
                 return noCriminalRecordEvaluator;
             case MORE_EXPERIENCE:
                 return moreExperienceEvaluator;
-            case MORE_CREDIT_SCORE:
-                return moreCreditScoreEvaluator;
-            case NO_CRIMINAL_RECORD_AND_MORE_EXPERIENCE:
-                return new ComboEvaluator(noCriminalRecordEvaluator, moreExperienceEvaluator);
             case MORE_EXPERIENCE_AND_MORE_CREDIT_SCORE:
-                return new ComboEvaluator(moreExperienceEvaluator, moreCreditScoreEvaluator);
+                return MORE_EXPERIENCE_AND_MORE_CREDIT_SCORE_EVALUATOR;
             case NO_CRIMINAL_RECORD_AND_MORE_CREDIT_SCORE:
-                return new ComboEvaluator(noCriminalRecordEvaluator, moreCreditScoreEvaluator);
+                return NO_CRIMINAL_RECORD_AND_MORE_CREDIT_SCORE_EVALUATOR;
+            case NO_CRIMINAL_RECORD_AND_MORE_EXPERIENCE:
+                return NO_CRIMINAL_RECORD_AND_MORE_EXPERIENCE_EVALUATOR;
             default:
                 throw new InvalidEvaluation();
-
         }
-
 
     }
 }
 
 
-// имплементација на евалуатори овде
-class ComboEvaluator implements Evaluator {
+class NoCriminalRecordEvaluator implements Evaluator {
+
+    @Override
+    public boolean evaluate(Applicant applicant) {
+        return !applicant.hasCriminalRecord();
+    }
+}
+
+class DoubleEvaluator implements Evaluator {
 
     Evaluator evaluator1;
     Evaluator evaluator2;
 
-    public ComboEvaluator(Evaluator evaluator1, Evaluator evaluator2) {
+    public DoubleEvaluator(Evaluator evaluator1, Evaluator evaluator2) {
         this.evaluator1 = evaluator1;
         this.evaluator2 = evaluator2;
     }
@@ -135,5 +139,7 @@ class ComboEvaluator implements Evaluator {
         return evaluator1.evaluate(applicant) && evaluator2.evaluate(applicant);
     }
 }
+
+// имплементација на евалуатори овде
 
 
