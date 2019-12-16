@@ -1,122 +1,10 @@
-package mk.ukim.finki.konsultacii;
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.*;
-
-import java.io.InputStream;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
-final class IntegerArray{
-    private int[] a;
-
-    public IntegerArray(int[] a) {
-        this.a = new int[a.length];
-        for(int i = 0; i < a.length; i++){
-            this.a[i] = a[i];
-        }
-    }
-
-    public int length(){
-        return a.length;
-    }
-
-    public int getElementAt(int i){
-        return a[i];
-    }
-
-    public int sum(){
-        int sum = 0;
-
-        for(int i = 0; i < a.length; i++){
-            sum += a[i];
-        }
-
-        return sum;
-    }
-
-    public double average(){
-        return (sum() * 1.0) / a.length;
-    }
-
-    public IntegerArray getSorted(){
-        int [] b = Arrays.copyOf(a, a.length);
-        Arrays.sort(b);
-        return new IntegerArray(b);
-    }
-
-    public IntegerArray concat(IntegerArray ia){
-        int[] temp = new int[a.length + ia.length()];
-        IntegerArray concatenated = new IntegerArray(temp);
-
-        for(int i = 0; i < a.length; i++){
-            concatenated.a[i] = this.a[i];
-        }
-
-        for(int i = 0; i < ia.length(); i++){
-            concatenated.a[i + a.length] = ia.getElementAt(i);
-        }
-
-        return concatenated;
-    }
-
-    @Override
-    public String toString() {
-        String result = new String();
-        result += "[";
-
-        for(int i = 0; i < a.length; i++){
-            result += a[i];
-            if(i != a.length - 1){
-                result += ", ";
-            }
-            else{
-                result += "]";
-            }
-        }
-
-        return result;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if(obj == null){
-            return false;
-        }
-
-        IntegerArray that = (IntegerArray) obj;
-
-        if(a.length != that.length()){
-            return false;
-        }
-
-        for(int i = 0; i < a.length; i++){
-            if(a[i] != that.getElementAt(i)){
-                return false;
-            }
-        }
-
-        return true;
-    }
-}
-
-class ArrayReader{
-    public static IntegerArray readIntegerArray(InputStream input){
-        Scanner s = new Scanner(input);
-
-        int length = s.nextInt();
-
-        int[] a = new int[length];
-
-        for(int i = 0; i < length; i ++){
-            a[i] = s.nextInt();
-        }
-
-        return new IntegerArray(a);
-    }
-}
 
 public class IntegerArrayTester {
 
@@ -230,4 +118,75 @@ public class IntegerArrayTester {
         return a;
     }
 
+}
+
+final class IntegerArray {
+    final int[] array;
+    final int length;
+
+    public IntegerArray(int a[]) {
+
+        this.length = a.length;
+        this.array = new int [length];
+        for (int i=0;i<length;i++) {
+            array[i]=a[i];
+        }
+    }
+    public int length() {
+        return this.length;
+    }
+    public int getElementAt(int i) {
+        return array[i];
+    }
+    public int sum() {
+        int sum = 0;
+        for (int i=0; i<this.length; i++)
+            sum += array[i];
+        return sum;
+    }
+    public double average() {
+        double average = 0d;
+        average = (double)this.sum() / this.length;
+        return average;
+    }
+    public IntegerArray getSorted() {
+        int[] newArray = this.array.clone();
+        IntegerArray newObject = new IntegerArray(newArray);
+        Arrays.sort(newObject.array);
+        return  newObject;
+    }
+    public IntegerArray concat(IntegerArray ia) {
+        int[] newArray = Arrays.copyOf(this.array, this.length + ia.length);
+        for (int i=this.length; i<(this.length + ia.length); i++)
+            newArray[i] = ia.array[i - ia.length];
+        IntegerArray newObject = new IntegerArray(newArray);
+        return newObject;
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for(int i=0; i<this.length-1; i++)
+            sb.append(this.array[i] + ", ");
+        sb.append(this.array[this.length-1] + "]");
+        return sb.toString();
+    }
+    @Override
+    public boolean equals(Object other) {
+        if(this == other) return true;
+        if(!(other instanceof IntegerArray)) return false;
+        return Arrays.equals(this.array, ((IntegerArray) other).array);
+    }
+}
+
+class ArrayReader {
+    public static IntegerArray readIntegerArray(InputStream input) {
+        Scanner scanner = new Scanner(input);
+        int n = scanner.nextInt();
+        int[] array = new int[n];
+        for (int i=0;i<n;i++)
+            array[i] = scanner.nextInt();
+        IntegerArray newObject = new IntegerArray(array);
+        return newObject;
+    }
 }
