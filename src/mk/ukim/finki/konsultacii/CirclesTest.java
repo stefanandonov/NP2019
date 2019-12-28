@@ -1,7 +1,7 @@
-//import java.util.ArrayList;
-//import java.util.Collection;
-//import java.util.List;
+//package mk.ukim.finki.konsultacii;
+//
 //import java.util.Scanner;
+//import java.util.Arrays;
 //
 //enum TYPE {
 //    POINT,
@@ -15,157 +15,243 @@
 //    RIGHT
 //}
 //
-//interface Movable{
-//    void moveUp() throws ObjectCanNotBeMovedException;
-//    void moveDown() throws ObjectCanNotBeMovedException;
-//    void moveLeft() throws ObjectCanNotBeMovedException;
-//    void moveRight() throws ObjectCanNotBeMovedException;
-//    int getCurrentPositionX();
-//    int getCurrentPositionY();
-//    boolean canFit (int X_MAX, int Y_MAX);
-//}
-//
-//class ObjectCanNotBeMovedException extends Exception{
-//    public ObjectCanNotBeMovedException(String message) {
-//        System.out.println("ObjectCanNotBeMovedException");
+//class ObjectCanNotBeMovedException extends Exception {
+//    ObjectCanNotBeMovedException(int x, int y) {
+//        super(String.format("Point (%d,%d) is out of bounds", x,y));
 //    }
 //}
 //
-//class MovablePoint implements Movable{
-//    int x, y, xSpeed, ySpeed;
+//class MovableObjectNotFittableException extends Exception {
+//    MovableObjectNotFittableException(Movable m) {
+//        super(m.toString() + " can not be fitted into the collection");
+//    }
+//}
 //
-//    public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
+//class MovablesCollection {
+//    private Movable[] movables;
+//
+//    public static int X_MAX = 0;
+//    public static int Y_MAX = 0;
+//
+//    public MovablesCollection(int X_MAX, int Y_MAX) {
+//        MovablesCollection.X_MAX = X_MAX;
+//        MovablesCollection.Y_MAX = Y_MAX;
+//        movables = new Movable[0];
+//    }
+//
+//    public static void setxMax(int i) {
+//        MovablesCollection.X_MAX = i;
+//    }
+//
+//    public static void setyMax(int i) {
+//        MovablesCollection.Y_MAX = i;
+//    }
+//
+//    void addMovableObject(Movable m) throws MovableObjectNotFittableException {
+//        if (!canFit(m))
+//            throw new MovableObjectNotFittableException(m);
+//        movables = Arrays.copyOf(movables, movables.length+1);
+//        movables[movables.length-1] = m;
+//    }
+//
+//    private boolean canFit(Movable m) {
+//        int x = m.getX();
+//        int y = m.getY();
+//        int r = 0;
+//        if (x<0 || x>MovablesCollection.X_MAX || y<0 || y>MovablesCollection.Y_MAX)
+//            return false;
+//        if (m.getType() == TYPE.CIRCLE)
+//            r = ((MovingCircle)m).getRadius();
+//        if (x-r<0 || x+r>MovablesCollection.X_MAX || y-r<0 || y+r>MovablesCollection.Y_MAX)
+//            return false;
+//        return true;
+//    }
+//
+//    public void moveObjectsFromTypeWithDirection(TYPE type, DIRECTION direction)  {
+//        for (Movable m : movables)
+//            if (m.getType()==type)
+//                switch (direction) {
+//                    case UP:    m.moveUp();    break;
+//                    case DOWN:  m.moveDown();  break;
+//                    case LEFT:  m.moveLeft();  break;
+//                    case RIGHT: m.moveRight(); break;
+//                }
+//    }
+//
+//    @Override
+//    public String toString() {
+//        StringBuilder sb = new StringBuilder();
+//        sb.append(String.format("Collection of movable objects with size %d:\n", movables.length));
+//        for (Movable movable : movables)
+//            sb.append(movable.toString() + "\n");
+//        return sb.toString();
+//    }
+//}
+//
+//
+//class MovingCircle implements Movable {
+//    private int radius;
+//    private MovingPoint center;
+//
+//    public MovingCircle(int radius, MovingPoint center) {
+//        this.radius = radius;
+//        this.center = center;
+//    }
+//    @Override
+//    public void moveUp() throws ObjectCanNotBeMovedException {
+////        if (center.getY() + center.getySpeed() + radius > MovablesCollection.Y_MAX) {
+////            throw new ObjectCanNotBeMovedException(this);
+////        }
+//        center.moveUp();
+//    }
+//
+//    @Override
+//    public void moveDown() throws ObjectCanNotBeMovedException {
+////        if (center.getY() - center.getySpeed() - radius < 0) {
+////            throw new ObjectCanNotBeMovedException(this);
+////        }
+//        center.moveDown();
+//    }
+//
+//    @Override
+//    public void moveRight() throws ObjectCanNotBeMovedException {
+////        if (center.getX() + center.getxSpeed() + radius > MovablesCollection.X_MAX) {
+////            throw new ObjectCanNotBeMovedException(this);
+////        }
+//        center.moveRight();
+//    }
+//
+//    @Override
+//    public void moveLeft() throws ObjectCanNotBeMovedException {
+////        if (center.getX() - center.getxSpeed() - radius < 0) {
+////            throw new ObjectCanNotBeMovedException(this);
+////        }
+//        center.moveLeft();
+//    }
+//
+//    @Override
+//    public int getX() {
+//        return center.getX();
+//    }
+//
+//    @Override
+//    public int getY() {
+//        return center.getY();
+//    }
+//
+//    public int getRadius() {
+//        return radius;
+//    }
+//
+//    @Override
+//    public TYPE getType() {
+//        return TYPE.CIRCLE;
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return String.format("Movable circle with center (%d,%d) and radius %d",
+//                center.getX(), center.getY(), radius);
+//    }
+//}
+//
+//class MovingPoint implements Movable {
+//    private int x;
+//    private int y;
+//    private int xSpeed;
+//    private int ySpeed;
+//
+//    public MovingPoint(int x, int y, int xSpeed, int ySpeed) {
 //        this.x = x;
 //        this.y = y;
 //        this.xSpeed = xSpeed;
 //        this.ySpeed = ySpeed;
 //    }
 //
+//    public MovingPoint getCopy() {
+//        MovingPoint point = new MovingPoint(x,y,xSpeed,ySpeed);
+//        return point;
+//    }
+//
 //    @Override
-//    public void moveUp(){
+//    public void moveUp() throws ObjectCanNotBeMovedException {
+//        if (y + ySpeed > MovablesCollection.Y_MAX) {
+//            throw new ObjectCanNotBeMovedException(this.x, this.y+this.ySpeed);
+//        }
 //        y += ySpeed;
 //    }
 //
 //    @Override
-//    public void moveDown(){
+//    public void moveDown() throws ObjectCanNotBeMovedException {
+//        if (y - ySpeed < 0) {
+//            throw new ObjectCanNotBeMovedException(this.x, this.y - this.ySpeed);
+//        }
 //        y -= ySpeed;
 //    }
 //
 //    @Override
-//    public void moveLeft(){
+//    public void moveRight() throws ObjectCanNotBeMovedException {
+//        if (x + xSpeed > MovablesCollection.X_MAX) {
+//            throw new ObjectCanNotBeMovedException(this.x + xSpeed, y);
+//        }
+//        x += xSpeed;
+//    }
+//
+//    public int getxSpeed() {
+//        return xSpeed;
+//    }
+//
+//    public int getySpeed() {
+//        return ySpeed;
+//    }
+//
+//    @Override
+//    public void moveLeft() throws ObjectCanNotBeMovedException {
+//        if (x - xSpeed < 0) {
+//            throw new ObjectCanNotBeMovedException(this.x - xSpeed, y);
+//        }
 //        x -= xSpeed;
 //    }
 //
 //    @Override
-//    public void moveRight(){
-//        x += xSpeed;
-//    }
-//
-//    @Override
-//    public int getCurrentPositionX(){
+//    public int getX() {
 //        return x;
 //    }
 //
 //    @Override
-//    public int getCurrentPositionY(){
+//    public int getY() {
 //        return y;
 //    }
 //
 //    @Override
-//    public boolean canFit(int X_MAX, int Y_MAX) {
-//        return x>=0 && x<=X_MAX && y>=0 && y<=Y_MAX;
+//    public TYPE getType() {
+//        return TYPE.POINT;
 //    }
 //
 //    @Override
-//    public String toString(){
-//        return String.format("Movable point with coordinates (%d, %d)", x, y);
+//    public String toString() {
+//        return String.format("Movable point with coordinates (%d,%d)", x, y);
 //    }
 //}
 //
-//class MovableCircle implements Movable{
-//    int radius;
-//    MovablePoint center;
 //
-//    public MovableCircle(int radius, MovablePoint center) {
-//        this.radius = radius;
-//        this.center = center;
-//    }
+//interface Movable {
+//    public void moveUp() throws ObjectCanNotBeMovedException;
+//    public void moveDown() throws ObjectCanNotBeMovedException;
+//    public void moveRight() throws ObjectCanNotBeMovedException;;
+//    public void moveLeft() throws ObjectCanNotBeMovedException;;
 //
-//    @Override
-//    public void moveUp(){
-//        center.y += center.ySpeed;
-//    }
+//    public int getX();
+//    public int getY();
 //
-//    @Override
-//    public void moveDown(){
-//        center.y -= center.ySpeed;
-//    }
+//    public TYPE getType();
 //
-//    @Override
-//    public void moveLeft(){
-//        center.x -= center.xSpeed;
-//    }
-//
-//    @Override
-//    public void moveRight(){
-//        center.x += center.xSpeed;
-//    }
-//
-//    @Override
-//    public int getCurrentPositionX(){
-//        return center.x;
-//    }
-//
-//    @Override
-//    public int getCurrentPositionY(){
-//        return center.y;
-//    }
-//
-//    @Override
-//    public boolean canFit(int X_MAX, int Y_MAX) {
-//        return false;
-//    }
-//
-//    @Override
-//    public String toString(){
-//        return String.format("Movable circle with center coordinates (%d,%d) and radius %d", center.x, center.y, radius);
-//    }
-//}
-//
-//class MovablesCollection{
-//    Movable movable[];
-//    static int x_MAX, y_MAX;
-//    public MovablesCollection(int x_MAX_, int y_MAX_){
-//        x_MAX = x_MAX_;
-//        y_MAX = y_MAX_;
-//    }
-//
-//    public static void setxMax(int x_MAX) {
-//        MovablesCollection.x_MAX = x_MAX;
-//    }
-//
-//    public static void setyMax(int y_MAX) {
-//        MovablesCollection.y_MAX = y_MAX;
-//    }
-//
-//    public void addMovableObject(Movable m){
-//        if (!m.canFit(x_MAX, y_MAX))
-//            thro
-//    }
-//
-//    public void moveObjectsFromTypeWithDirection (TYPE type, DIRECTION direction){
-//
-//    }
-//
-//    @Override
-//    public String toString(){
-//        return String.format("Collection of movable objects with size [%d]: ", movable.length);
-//    }
+//    public String toString();
 //}
 //
 //public class CirclesTest {
 //
-//    public static void main(String[] args) {
+//    public static void main(String[] args) throws MovableObjectNotFittableException, ObjectCanNotBeMovedException {
 //
 //        System.out.println("===COLLECTION CONSTRUCTOR AND ADD METHOD TEST===");
 //        MovablesCollection collection = new MovablesCollection(100, 100);
@@ -180,22 +266,38 @@
 //            int xSpeed = Integer.parseInt(parts[3]);
 //            int ySpeed = Integer.parseInt(parts[4]);
 //
-//            if (Integer.parseInt(parts[0]) == 0) { //point
-//                collection.addMovableObject(new MovablePoint(x, y, xSpeed, ySpeed));
-//            } else { //circle
-//                int radius = Integer.parseInt(parts[5]);
-//                collection.addMovableObject(new MovableCircle(radius, new MovablePoint(x, y, xSpeed, ySpeed)));
+//            if (Integer.parseInt(parts[0]) == 0) {  //point
+//                try {
+//                    collection.addMovableObject(new MovingPoint(x, y, xSpeed, ySpeed));
+//                } catch (MovableObjectNotFittableException e) {
+//                    System.out.println(e.getMessage());
+//                }
+//            } else {    //circle
+//                try {
+//                    int radius = Integer.parseInt(parts[5]);
+//                    collection.addMovableObject(new MovingCircle(radius, new MovingPoint(x, y, xSpeed, ySpeed)));
+//                } catch (MovableObjectNotFittableException e) {
+//                    System.out.println(e.getMessage());
+//                }
 //            }
 //
 //        }
 //        System.out.println(collection.toString());
 //
 //        System.out.println("MOVE POINTS TO THE LEFT");
-//        collection.moveObjectsFromTypeWithDirection(TYPE.POINT, DIRECTION.LEFT);
+//        try {
+//            collection.moveObjectsFromTypeWithDirection(TYPE.POINT, DIRECTION.LEFT);
+//        } catch (ObjectCanNotBeMovedException e) {
+//            System.out.println(e.getMessage());
+//        }
 //        System.out.println(collection.toString());
 //
 //        System.out.println("MOVE CIRCLES DOWN");
-//        collection.moveObjectsFromTypeWithDirection(TYPE.CIRCLE, DIRECTION.DOWN);
+//        try {
+//            collection.moveObjectsFromTypeWithDirection(TYPE.CIRCLE, DIRECTION.DOWN);
+//        } catch (ObjectCanNotBeMovedException e) {
+//            System.out.println(e.getMessage());
+//        }
 //        System.out.println(collection.toString());
 //
 //        System.out.println("CHANGE X_MAX AND Y_MAX");
@@ -203,15 +305,19 @@
 //        MovablesCollection.setyMax(90);
 //
 //        System.out.println("MOVE POINTS TO THE RIGHT");
-//        collection.moveObjectsFromTypeWithDirection(TYPE.POINT, DIRECTION.RIGHT);
+//        try {
+//            collection.moveObjectsFromTypeWithDirection(TYPE.POINT, DIRECTION.RIGHT);
+//        } catch (ObjectCanNotBeMovedException e) {
+//            System.out.println(e.getMessage());
+//        }
 //        System.out.println(collection.toString());
 //
 //        System.out.println("MOVE CIRCLES UP");
-//        collection.moveObjectsFromTypeWithDirection(TYPE.CIRCLE, DIRECTION.UP);
+//        try {
+//            collection.moveObjectsFromTypeWithDirection(TYPE.CIRCLE, DIRECTION.UP);
+//        } catch (ObjectCanNotBeMovedException e) {
+//            System.out.println(e.getMessage());
+//        }
 //        System.out.println(collection.toString());
-//
-//
 //    }
-//
-//
 //}
