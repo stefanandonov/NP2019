@@ -1,110 +1,90 @@
 package mk.ukim.finki.av10_final;
 
+import javax.swing.*;
+import java.lang.reflect.Field;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * Partial exam II 2016/2017
- */
+class File{
+    private String name;
+    private Integer size;
+    private LocalDateTime dateOfCreation;
 
-class File {
-    String name;
-    int size;
-    LocalDateTime date;
-
-    public File(String name, int size, LocalDateTime date) {
+    public File(String name, Integer size, LocalDateTime dateOfCreation) {
         this.name = name;
         this.size = size;
-        this.date = date;
-    }
-
-    public String toString() {
-        return String.format("%-10s %5dB %s", name, size, date.toString());
+        this.dateOfCreation = dateOfCreation;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getSize() {
+    public Integer getSize() {
         return size;
     }
 
-    public LocalDateTime getDate() {
-        return date;
+    public LocalDateTime getDateOfCreation() {
+        return dateOfCreation;
+    }
+
+    public int getYear(){
+        return dateOfCreation.getYear();
+    }
+
+    @Override
+    public String toString(){
+        return String.format("%-10s %5dB %s", name, size, dateOfCreation);
     }
 }
 
-class FileSystem {
-    Map<Character, Set<File>> filesByFolders;
+class FileSystem{
+
+    Map<Character, Set<File>> map;
     Map<Integer, Set<File>> filesByYear;
-    Map<String, Long> filesByMonthAndDay;
-    List<File> allFiles;
-    private static Comparator<File> fileComparator = Comparator.comparing(File::getDate)
-            .thenComparing(File::getName)
-            .thenComparing(File::getSize);
+    private static Comparator<File> comparator = Comparator.comparing(File::getDateOfCreation).thenComparing(File::getName).thenComparing(File::getSize);
 
-    FileSystem () {
-        filesByFolders = new HashMap<>();
+    public FileSystem(){
+        map = new TreeMap<>();
         filesByYear = new TreeMap<>();
-        filesByMonthAndDay = new TreeMap<>();
-        allFiles = new ArrayList<>();
     }
 
-    public void addFile(char folder, String name, int size, LocalDateTime createdAt) {
-        File file = new File (name, size, createdAt);
-
-        filesByFolders.putIfAbsent(folder, new TreeSet<>(fileComparator));
-        filesByFolders.get(folder).add(file);
-
-        allFiles.add(file);
-
-        Integer yearOfFile = file.getDate().getYear();
-
-        filesByYear.putIfAbsent(yearOfFile, new TreeSet<>(fileComparator));
-        filesByYear.get(yearOfFile).add(file);
-
-        String key = file.getDate().getMonth().toString() + "-" + file.getDate().getDayOfMonth();
-
-        filesByMonthAndDay.putIfAbsent(key, 0L);
-        filesByMonthAndDay.computeIfPresent(key, (k,v) -> {
-            v+=(long)file.size;
-            return v;
+    public void addFile(char folder, String name, int size, LocalDateTime createdAt){
+        File file = new File(name, size, createdAt);
+        map.computeIfAbsent(folder, key -> {
+            Set<File> set = new TreeSet<>(comparator);
+            set.add(file);
+            return set;
         });
+        map.get(folder).add(file);
 
+        filesByYear.computeIfAbsent(createdAt.getYear(), key -> {
+            Set<File> set = new TreeSet<>(comparator);              // <--- Exception in thread "main" java.lang.ClassCastException: File cannot be cast to java.lang.Comparable
+            set.add(file);                      // ne mozam dva pati da iskoristam isti comparator?
+            return set;
+        });
+        filesByYear.get(createdAt.getYear()).add(file);
     }
 
-    public List<File> findAllHiddenFilesWithSizeLessThen(int size)  {
-        return allFiles.stream()
-                .filter(file -> file.name.startsWith(".") && file.size<size)
-                .collect(Collectors.toList());
-
+    public List<File> findAllHiddenFilesWithSizeLessThen(int size){
+        return map.values().stream().flatMap(x -> x.stream().filter(y -> y.getName().startsWith(".")&&y.getSize() < size)).collect(Collectors.toList());
     }
 
-    public int totalSizeOfFilesFromFolders(List<Character> folders) {
-
-        return folders.stream()
-                .flatMapToInt(folderName -> filesByFolders.get(folderName).stream().mapToInt(File::getSize))
-                .sum();
-
-//        return folders.stream()
-//                .mapToInt(folderName -> filesByFolders.get(folderName)
-//                        .stream()
-//                        .mapToInt(File::getSize)
-//                        .sum()
-//                )
-//                .sum();
+    public int totalSizeOfFilesFromFolders(List<Character> folders){
+        return folders.stream().mapToInt(x -> map.get(x).stream().mapToInt(File::getSize).sum()).sum();
     }
 
-    public Map<Integer, Set<File>> byYear() {
-        return filesByYear;
+    public Map<Integer, Set<File>> byYear(){
+        return map.values().stream().flatMap(Collection::stream).collect(Collectors.groupingBy(File::getYear, Collectors.toCollection(() -> new TreeSet<>(comparator))));
+        //return null;                                        
     }
 
-    public Map<String, Long> sizeByMonthAndDay() {
-        return filesByMonthAndDay;
+    public Map<String, Long> sizeByMonthAndDay(){
+        return null;
     }
 }
+
 
 public class FileSystemTest {
     public static void main(String[] args) {
@@ -157,4 +137,3 @@ public class FileSystemTest {
 }
 
 // Your code here
-

@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3228678d-f9c1-451e-a3dc-ef417028652a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av10_final/FileSystemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av10_final/PhoneDirectoryTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av10_final/RoadNetworkTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av11_cetvrtok/SongLibraryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av11_cetvrtok/StudentRecordsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ComponentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/EventCalendarTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/FrequencyCounterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/IntegerListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/MoviesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/NamesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/StreamTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/TermFrequencyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/primeri/KafkaDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/primeri/NGramsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/primeri/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TextProcessor1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TextProcessor1/TextProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TextProcessor2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TextProcessor2/TextProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection/TuplesCollectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection_2solution/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection_2solution/TuplesCollectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/LabExercisesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/MessageBrokersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/MojDDVTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/Anagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/Anagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/CirclesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/CirclesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/av10_final/FileSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av10_final/FileSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/IntegerListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/IntegerListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,19 +47,25 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Elevate_Globaol/gcid" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection_2solution" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.SchedulerTest">
-    <configuration name="CirclesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.konsultacii.CirclesTest" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection_2solution" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FileSystemTest">
+    <configuration name="FileSystemTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av10_final.FileSystemTest" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.konsultacii.*" />
+          <option name="PATTERN" value="mk.ukim.finki.av10_final.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EventCalendarTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.konsultacii.EventCalendarTest" />
+    <configuration name="LabExercisesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.vtor_kolokvium_test.LabExercisesTest" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.konsultacii.*" />
+          <option name="PATTERN" value="mk.ukim.finki.vtor_kolokvium_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchedulerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.konsultacii.SchedulerTest" />
+    <configuration name="LinesGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.primeri.LinesGenerator" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.konsultacii.*" />
+          <option name="PATTERN" value="mk.ukim.finki.primeri.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRecordsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.av11_cetvrtok.StudentRecordsTest" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.intervies_questions.Solution" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.av11_cetvrtok.*" />
+          <option name="PATTERN" value="mk.ukim.finki.intervies_questions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TermFrequencyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.konsultacii.TermFrequencyTest" />
+    <configuration name="TuplesCollectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mk.ukim.finki.primeri.TuplesCollectionTest" />
       <module name="NP_2019_petok" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mk.ukim.finki.konsultacii.*" />
+          <option name="PATTERN" value="mk.ukim.finki.primeri.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SchedulerTest" />
-        <item itemvalue="Application.StudentRecordsTest" />
-        <item itemvalue="Application.TermFrequencyTest" />
-        <item itemvalue="Application.EventCalendarTest" />
-        <item itemvalue="Application.CirclesTest" />
+        <item itemvalue="Application.FileSystemTest" />
+        <item itemvalue="Application.TuplesCollectionTest" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.LabExercisesTest" />
+        <item itemvalue="Application.LinesGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +170,15 @@
       <workItem from="1575645329254" duration="7916000" />
       <workItem from="1576074660940" duration="17732000" />
       <workItem from="1576762643371" duration="10553000" />
-      <workItem from="1577045333354" duration="45721000" />
+      <workItem from="1577045333354" duration="56624000" />
+      <workItem from="1578854724492" duration="3198000" />
+      <workItem from="1579437055087" duration="39696000" />
+      <workItem from="1579828877316" duration="1916000" />
+      <workItem from="1580091101145" duration="8705000" />
+      <workItem from="1580157382110" duration="808000" />
+      <workItem from="1580733342797" duration="4397000" />
+      <workItem from="1581288463473" duration="12427000" />
+      <workItem from="1582123607122" duration="830000" />
     </task>
     <task id="LOCAL-00001" summary="av5 done">
       <created>1573227791773</created>
@@ -204,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576501312972</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="final exercises">
+      <created>1577547596985</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577547596985</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +247,8 @@
     <MESSAGE value="av6 added" />
     <MESSAGE value="av7 added" />
     <MESSAGE value="av9 added" />
-    <option name="LAST_COMMIT_MESSAGE" value="av9 added" />
+    <MESSAGE value="final exercises" />
+    <option name="LAST_COMMIT_MESSAGE" value="final exercises" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="214" width="800" height="729" key="#Intentions" timestamp="1576253497212">
@@ -240,92 +259,106 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="618" y="233" width="894" height="484" key="#com.intellij.debugger.streams.ui.EvaluationAwareTraceWindow/67.27.1853.1053@67.27.1853.1053" timestamp="1577449368374" />
-    <state x="801" y="271" width="558" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1577357500713">
+    <state x="801" y="271" width="558" height="652" key="#com.intellij.ide.util.MemberChooser" timestamp="1581288819023">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="801" y="271" width="558" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575651062961" />
-    <state x="801" y="271" width="558" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1577357500713" />
+    <state x="801" y="271" width="558" height="652" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1581288819023" />
     <state x="1920" y="271" key="#com.intellij.ide.util.MemberChooser/67.27.3773.1053@67.27.3773.1053" timestamp="1576501914885" />
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1579801289909">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579801289909" />
     <state x="1001" y="487" width="474" height="593" key="#xdebugger.evaluate" timestamp="1577109158304">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1001" y="487" width="474" height="593" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1577109158304" />
-    <state x="558" y="140" width="860" height="824" key="CommitChangelistDialog2" timestamp="1576501312772">
+    <state x="558" y="140" width="860" height="824" key="CommitChangelistDialog2" timestamp="1577547596854">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="558" y="140" width="860" height="824" key="CommitChangelistDialog2/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575061707625" />
-    <state x="558" y="140" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1576501312772" />
+    <state x="558" y="140" width="860" height="824" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1577547596854" />
     <state width="483" height="466" key="DebuggerActiveHint" timestamp="1576850451720">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="483" height="466" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1576850451720" />
-    <state width="1807" height="483" key="GridCell.Tab.0.bottom" timestamp="1577449356063">
+    <state width="1807" height="321" key="GridCell.Tab.0.bottom" timestamp="1581451221514">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="564" key="GridCell.Tab.0.bottom/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575650025359" />
-    <state width="1807" height="483" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1577449356063" />
+    <state width="1807" height="321" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581451221514" />
+    <state width="1807" height="256" key="GridCell.Tab.0.bottom/67.27.3533.1053@67.27.3533.1053" timestamp="1579616433514" />
     <state width="1874" height="149" key="GridCell.Tab.0.bottom/67.27.3773.1053@67.27.3773.1053" timestamp="1576504869720" />
-    <state width="1807" height="483" key="GridCell.Tab.0.center" timestamp="1577449356063">
+    <state width="1807" height="321" key="GridCell.Tab.0.center" timestamp="1581451221514">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="564" key="GridCell.Tab.0.center/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575650025359" />
-    <state width="1807" height="483" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1577449356063" />
+    <state width="1807" height="321" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581451221514" />
+    <state width="1807" height="256" key="GridCell.Tab.0.center/67.27.3533.1053@67.27.3533.1053" timestamp="1579616433514" />
     <state width="1874" height="149" key="GridCell.Tab.0.center/67.27.3773.1053@67.27.3773.1053" timestamp="1576504869720" />
-    <state width="1807" height="483" key="GridCell.Tab.0.left" timestamp="1577449356062">
+    <state width="1807" height="321" key="GridCell.Tab.0.left" timestamp="1581451221514">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="564" key="GridCell.Tab.0.left/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575650025358" />
-    <state width="1807" height="483" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1577449356062" />
+    <state width="1807" height="321" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581451221514" />
+    <state width="1807" height="256" key="GridCell.Tab.0.left/67.27.3533.1053@67.27.3533.1053" timestamp="1579616433514" />
     <state width="1874" height="149" key="GridCell.Tab.0.left/67.27.3773.1053@67.27.3773.1053" timestamp="1576504869719" />
-    <state width="1807" height="483" key="GridCell.Tab.0.right" timestamp="1577449356063">
+    <state width="1807" height="321" key="GridCell.Tab.0.right" timestamp="1581451221514">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="564" key="GridCell.Tab.0.right/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575650025359" />
-    <state width="1807" height="483" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1577449356063" />
+    <state width="1807" height="321" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581451221514" />
+    <state width="1807" height="256" key="GridCell.Tab.0.right/67.27.3533.1053@67.27.3533.1053" timestamp="1579616433514" />
     <state width="1874" height="149" key="GridCell.Tab.0.right/67.27.3773.1053@67.27.3773.1053" timestamp="1576504869720" />
-    <state width="1807" height="483" key="GridCell.Tab.1.bottom" timestamp="1577449358760">
+    <state width="1807" height="557" key="GridCell.Tab.1.bottom" timestamp="1581451221508">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="483" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1577449358760" />
+    <state width="1807" height="557" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581451221508" />
     <state width="1874" height="149" key="GridCell.Tab.1.bottom/67.27.3773.1053@67.27.3773.1053" timestamp="1576504869479" />
-    <state width="1807" height="483" key="GridCell.Tab.1.center" timestamp="1577449358759">
+    <state width="1807" height="557" key="GridCell.Tab.1.center" timestamp="1581451221507">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="483" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1577449358759" />
+    <state width="1807" height="557" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581451221507" />
     <state width="1874" height="149" key="GridCell.Tab.1.center/67.27.3773.1053@67.27.3773.1053" timestamp="1576504869479" />
-    <state width="1807" height="483" key="GridCell.Tab.1.left" timestamp="1577449358759">
+    <state width="1807" height="557" key="GridCell.Tab.1.left" timestamp="1581451221507">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="483" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1577449358759" />
+    <state width="1807" height="557" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581451221507" />
     <state width="1874" height="149" key="GridCell.Tab.1.left/67.27.3773.1053@67.27.3773.1053" timestamp="1576504869479" />
-    <state width="1807" height="483" key="GridCell.Tab.1.right" timestamp="1577449358760">
+    <state width="1807" height="557" key="GridCell.Tab.1.right" timestamp="1581451221507">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="483" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1577449358760" />
+    <state width="1807" height="557" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581451221507" />
     <state width="1874" height="149" key="GridCell.Tab.1.right/67.27.3773.1053@67.27.3773.1053" timestamp="1576504869479" />
-    <state x="771" y="265" width="434" height="575" key="RollbackChangesDialog" timestamp="1577547550716">
+    <state x="771" y="265" width="434" height="575" key="RollbackChangesDialog" timestamp="1582123707858">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
+    <state x="771" y="265" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582123707858" />
     <state x="771" y="265" width="434" height="575" key="RollbackChangesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1577547550716" />
-    <state x="471" y="235" width="1920" height="845" key="SettingsEditor" timestamp="1577352066289">
+    <state x="471" y="235" width="1920" height="845" key="SettingsEditor" timestamp="1577631406972">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="430" y="178" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575746065779" />
-    <state x="471" y="235" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1577352066289" />
+    <state x="471" y="235" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1577631406972" />
     <state x="1920" y="235" width="1920" height="845" key="SettingsEditor/67.27.3773.1053@67.27.3773.1053" timestamp="1576501906983" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576501314788">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1577547599313">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575061711711" />
-    <state x="588" y="288" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1576501314788" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576075383285">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1577547599313" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580157383211">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576075383285" />
-    <state x="302" y="153" width="1372" height="798" key="new project wizard" timestamp="1575061950233">
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580157383211" />
+    <state x="740" y="465" width="524" height="495" key="extract.method.dialog" timestamp="1579463040488">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="740" y="465" width="524" height="495" key="extract.method.dialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579463040488" />
+    <state x="302" y="153" width="1372" height="796" key="new project wizard" timestamp="1579960265437">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="302" y="153" width="1372" height="798" key="new project wizard/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575061950233" />
+    <state x="302" y="153" width="1372" height="796" key="new project wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1579960265437" />
     <state x="657" y="253" key="run.anything.popup" timestamp="1577125770982">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -656,18 +689,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mk/ukim/finki/primeri/MessageBrokersTest.java</url>
-          <line>70</line>
+          <line>77</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mk/ukim/finki/primeri/MessageBrokersTest.java</url>
-          <line>80</line>
+          <line>87</line>
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="messagePartition!=null" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/mk/ukim/finki/primeri/MessageBrokersTest.java</url>
-          <line>68</line>
+          <line>75</line>
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -675,36 +708,6 @@
           <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/NamesTest.java</url>
           <line>50</line>
           <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/primeri/TuplesCollectionTest.java</url>
-          <line>148</line>
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>153</line>
-          <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/CirclesTest.java</url>
@@ -800,26 +803,6 @@
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>172</line>
-          <option name="timeStamp" value="182" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>167</line>
-          <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>169</line>
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
-          <line>163</line>
-          <option name="timeStamp" value="186" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mk/ukim/finki/av11_cetvrtok/StudentRecordsTest.java</url>
           <line>81</line>
           <option name="timeStamp" value="187" />
@@ -887,10 +870,73 @@
           <line>93</line>
           <option name="timeStamp" value="204" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
+          <line>186</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
+          <line>187</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
+          <line>188</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/quadtree/QuadTreeKnotenImpl.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/quadtree/QuadTreeKnotenImpl.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/quadtree/QuadTreeKnotenImpl.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/quadtree/QuadTreeKnotenImpl.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/mk/ukim/finki/primeri/NGramsTest.java</url>
-          <line>163</line>
-          <properties class="mk.ukim.finki.primeri.NGramsTest" method="main">
+          <line>162</line>
+          <properties class="mk.ukim.finki.primeri.NGramsTest">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="145" />
