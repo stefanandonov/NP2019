@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3228678d-f9c1-451e-a3dc-ef417028652a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TextProcessor1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TextProcessor1/TextProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TextProcessor2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TextProcessor2/TextProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection/TuplesCollectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection_2solution/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/january/TuplesCollection_2solution/TuplesCollectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/LabExercisesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/MessageBrokersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/MojDDVTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/vtor_kolokvium/laboratoriski_vezhbi/LabExercisesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/vtor_kolokvium/laboratoriski_vezhbi/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/vtor_kolokvium/message_system/MessageBrokersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mk/ukim/finki/exams/vtor_kolokvium/message_system/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/av10_final/FileSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/av10_final/FileSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ChatSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/ContactsTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/IntegerListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mk/ukim/finki/konsultacii/IntegerListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +167,7 @@
       <workItem from="1580157382110" duration="808000" />
       <workItem from="1580733342797" duration="4397000" />
       <workItem from="1581288463473" duration="12427000" />
-      <workItem from="1582123607122" duration="830000" />
+      <workItem from="1582123607122" duration="1588000" />
     </task>
     <task id="LOCAL-00001" summary="av5 done">
       <created>1573227791773</created>
@@ -222,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577547596985</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="february exam added">
+      <created>1582124487218</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582124487219</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +244,8 @@
     <MESSAGE value="av7 added" />
     <MESSAGE value="av9 added" />
     <MESSAGE value="final exercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="final exercises" />
+    <MESSAGE value="february exam added" />
+    <option name="LAST_COMMIT_MESSAGE" value="february exam added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="214" width="800" height="729" key="#Intentions" timestamp="1576253497212">
@@ -273,9 +270,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1001" y="487" width="474" height="593" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1577109158304" />
-    <state x="558" y="140" width="860" height="824" key="CommitChangelistDialog2" timestamp="1577547596854">
+    <state x="558" y="140" width="860" height="824" key="CommitChangelistDialog2" timestamp="1582124486995">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
+    <state x="558" y="140" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582124486995" />
     <state x="558" y="140" width="860" height="824" key="CommitChangelistDialog2/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575061707625" />
     <state x="558" y="140" width="860" height="824" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1577547596854" />
     <state width="483" height="466" key="DebuggerActiveHint" timestamp="1576850451720">
@@ -341,9 +339,10 @@
     <state x="430" y="178" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575746065779" />
     <state x="471" y="235" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1577631406972" />
     <state x="1920" y="235" width="1920" height="845" key="SettingsEditor/67.27.3773.1053@67.27.3773.1053" timestamp="1576501906983" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1577547599313">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582124500426">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
+    <state x="588" y="288" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582124500426" />
     <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/67.27.1853.1053@67.27.1853.1053" timestamp="1575061711711" />
     <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1577547599313" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580157383211">
